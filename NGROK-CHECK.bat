@@ -9,8 +9,8 @@ echo To change another VM region, Create New organization (Your current VM locat
 echo Region Available: West Europe, Central US, East Asia, Brazil South, Canada Central, Autralia East, UK South, South India
 echo Hepsi tamam! VM'nizi RDP kullanarak bağlayın. RDP'nin süresi dolduğunda ve VM kapatıldığında, yeni bir RDP almak için işleri Yeniden Çalıştırma başarısız oldu.
 net user installer /delete
-curl -o "C:\Users\Public\Desktop\Readme.txt" https://raw.githubusercontent.com/huilgetto/Azure_RDP/main/Readme.txt > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\SetupBrowser.zip" https://raw.githubusercontent.com/huilgetto/Azure_RDP/main/SetupBrowser.zip > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Readme.txt" https://raw.githubusercontent.com/hayday1/Azure_RDP/main/Readme.txt > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\SetupBrowser.zip" https://raw.githubusercontent.com/hayday1/Azure_RDP/main/SetupBrowser.zip > out.txt 2>&1
 diskperf -Y >nul
 sc config Audiosrv start= auto >nul
 sc start audiosrv >nul
@@ -21,6 +21,6 @@ echo IP: Altta ↓
 tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "NGROK tüneli alınamıyor, lütfen yeni NGROK TOKEN'i YML'ye yapıştırın. Tüneli buradan kontrol edin: https://dashboard.ngrok.com/status/tunnels" && exit
 echo Kullanıcı Adı: administrator
 echo Şifre: GettoVDS!12
-echo Daha Fazlası İçin: https://www.youtube.com/channel/UCw8UCf_Fu5fs_dl1eDn9bWg
+echo Daha Fazlası İçin: youtube.com/gettovds
 echo VDS Videoları: https://www.youtube.com/watch?v=94_wzMu24ZY&list=PLN5czqqhG0sOHMNxdtNu7USdTkLYtyJIz
 ping -n 999999 10.10.0.10 >nul
